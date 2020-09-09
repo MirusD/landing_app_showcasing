@@ -1,0 +1,24 @@
+{
+  "name": "app_showcasing",
+  "version": "1.0.0",
+  "description": "Landing page template for app showcasing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirusD/landing_app_showcasing.git"
+  },
+  "keywords": [
+    "landing",
+    "app",
+    "showcasng"
+  ],
+  "author": "Damir Salikhov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MirusD/landing_app_showcasing/issues"
+  },
+  "homepage": "https://github.com/MirusD/landing_app_showcasing#readme"
+}
