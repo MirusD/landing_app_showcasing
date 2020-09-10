@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page template for app showcasing",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development webpack --mode development --open",
-    "watch": "cross-env NODE_EMV=development webpack --mode development --watch --open",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "repository": {
