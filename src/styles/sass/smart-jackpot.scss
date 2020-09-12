@@ -1,0 +1,29 @@
+.smart-jackpot {
+  margin-top: 50px;
+  padding-bottom: 80px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__first-block {
+    display: flex;
+  }
+
+  &__second-block {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 0 1 300px;
+  }
+
+  &__text {
+    padding: 50px 50px;
+    margin-left: 90px;
+    border-left: 2px solid #b9b9b8;
+  }
+}

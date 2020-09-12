@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  border-radius: 25px;
+  padding: {
+    left: 30px;
+    right: 30px;
+  }
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  &__primary {
+    color: white;
+    background-color: $color-fifth;
+    &:hover {
+      background-color: $color-third;
+    }
+  }
+  &__light {
+    color: $color-fifth;
+    &:hover {
+      color: $color-third;
+    }
+  }
+}

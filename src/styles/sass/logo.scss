@@ -1,0 +1,12 @@
+.logo {
+  font-size: $font-size-logo;
+  font-weight: bold;
+  margin-right: auto;
+  text-decoration: none;
+  &__mark-first {
+    color: $color-ninth;
+  }
+  &__mark-second {
+    color: $color-second;
+  }
+}

@@ -44,18 +44,22 @@ module.exports = {
     devServer: {
         contentBase: './dist',
         port: 3000,
-        hot: isDev
+        // hot: isDev
     },
     module: {
         rules: [
             {
+                test: /\.html$/,
+                loader: ['html-loader']
+            },
+            {
                 test: /\.css$/,
                 use: [{
                     loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        hmr: isDev,
-                        reloadAll: true
-                    }
+                    // options: {
+                    //     hmr: isDev,
+                    //     reloadAll: true
+                    // }
                 },
                     'css-loader'
                 ]
@@ -63,23 +67,39 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: [{
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        hmr: isDev,
-                        reloadAll: true
-                    }
-                },
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: isDev,
+                            reloadAll: true,
+                            publicPath: (resourcePath, context) => {
+                                console.log(context);
+                                return path.relative(path.dirname(resourcePath), context) + '/';
+                            }
+                        }
+                    },
                     'css-loader',
                     'sass-loader'
                 ]
             },
             {
                 test: /\.(png|jpg|svg|gif)$/i,
-                loader: ['file-loader']
+                loader: {
+                    loader: 'file-loader',
+                    options: {
+                        name: isDev ? '[name].[hash].[ext]':'[name].[ext]',
+                        outputPath: 'assets/img'
+                    }
+                }
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/i,
-                loader: ['file-loader']
+                loader: {
+                    loader: 'file-loader',
+                    options: {
+                        name: isDev ? '[name].[hash].[ext]':'[name].[ext]',
+                        outputPath: 'assets/fonts'
+                    }
+                }
             },
             {
                 test: /\.m?js$/,
@@ -93,12 +113,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             minify: {
-                collapseWhitespace: isProd
+                collapseWhitespace: false
             }
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: filename('css')
+            filename: `assets/style/${filename('css')}`
         }),
         new CopyWebpackPlugin({
             patterns: [

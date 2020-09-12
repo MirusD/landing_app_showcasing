@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  color: $color-second;
+  &__link {
+    text-decoration: none;
+    padding: 7px;
+    margin-right: 17px;
+    color: inherit;
+    &:hover {
+      text-shadow: 0 0 1px $color-first;
+    }
+  }
+}

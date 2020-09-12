@@ -1,4 +1,3 @@
-import "./styles/style.css"
-import "./styles/sass/style.scss";
+import "./main"
 
 console.log('test');

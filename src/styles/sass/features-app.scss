@@ -1,0 +1,46 @@
+.features-app {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url("~@/img/background-pic1.png");
+    background-repeat: no-repeat;
+    background-position: left -120px top 120px;
+  }
+
+  &__img {
+    margin-left: -50px;
+  }
+
+  &__list {
+    margin-top: -120px;
+    margin-right: 90px;
+    margin-left: 80px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__subtext {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  &__description-title {
+    margin-bottom: 5px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+
+  &__icon {
+    margin-right: 30px;
+  }
+}

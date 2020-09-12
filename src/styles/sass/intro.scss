@@ -1,0 +1,107 @@
+.intro {
+  position: relative;
+  padding: {
+    top: 150px;
+    bottom: 10px;
+  };
+  background-color: #fdfdfe;
+  background-image: url("~@/img/fone-city.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__suptitle {
+    display: inline-block;
+    position: relative;
+    line-height: 32px;
+    border-radius: 20px;
+    background-color: $color-tenth;
+    padding: {
+      right: 40px;
+      left: 40px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35px;
+      height: 100%;
+      border-radius: 100%;
+      background-color: $color-ninth;
+      background-image: url("~@/img/icons/tick.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    width: 500px;
+    line-height: 25px;
+  }
+
+  &__shape {
+
+    &-circle_position {
+
+      &_first {
+        right: 32%;
+        top: 14%;
+      }
+
+      &_second {
+        left: 21%;
+        bottom: 10%;
+      }
+
+      &_third {
+        right: 4%;
+        bottom: 6%;
+      }
+
+      &_fourth {
+        top: 19%;
+        left: 6%;
+      }
+    }
+
+    &-rectangle_position {
+
+      &_first {
+        top: 31%;
+        left: 28%;
+      }
+
+    }
+
+    &-plus_position {
+
+      &_first {
+        bottom: 5%;
+        left: 40%;
+      }
+
+    }
+
+    &-cross_position {
+
+      &_first {
+        bottom: 22%;
+        left: 50%;
+      }
+
+      &_second {
+        bottom: 15%;
+        left: 3%;
+      }
+    }
+  }
+}
