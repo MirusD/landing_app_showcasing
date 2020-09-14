@@ -1,0 +1,38 @@
+.price-holder {
+
+  &__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ebebeb;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin: {
+      top: 80px;
+      bottom: 40px;
+    }
+    padding: {
+      right: 30px;
+      left: 30px;
+    }
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      height: 40px;
+      width: 45%;
+      background-color: $color-fifth;
+      border-radius: 30px;
+      z-index: -1;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+}

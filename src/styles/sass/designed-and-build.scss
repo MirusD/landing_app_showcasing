@@ -1,0 +1,22 @@
+.designed-and-build {
+  margin-top: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    margin-left: -100px;
+  }
+
+  &__content {
+    flex: 0 1 400px;
+    margin-right: 50px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+}

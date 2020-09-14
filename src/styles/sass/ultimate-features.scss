@@ -1,0 +1,37 @@
+.ultimate-features {
+  margin-top: 80px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    max-width: 450px;
+  }
+
+  &__subtext {
+    max-width: 500px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    flex: 0 1 300px;
+  }
+
+  &__img {
+    margin-right: -250px;
+  }
+
+  &__btn {
+    padding: {
+      right: 50px;
+      left: 50px;
+    }
+  }
+}

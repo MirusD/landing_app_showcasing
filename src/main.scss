@@ -11,6 +11,17 @@
 @import "styles/sass/trusted";
 @import "styles/sass/features-app";
 @import "styles/sass/smart-jackpot";
+@import "styles/sass/designed-and-build";
+@import "styles/sass/choose-our-app";
+@import "styles/sass/ultimate-features";
+@import "components/price-holder/price-holder";
+@import "styles/sass/card";
+@import "styles/sass/offer";
+@import "styles/sass/testimonial";
+@import "styles/sass/persone";
+@import "styles/sass/faq";
+@import "styles/sass/download-app";
+@import "styles/sass/footer";
 
 body {
   font-family: Poppins, sans-serif;
@@ -19,12 +30,6 @@ body {
   font-weight: normal;
   color: $color-first;
   line-height: 1.6em;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .container {
@@ -69,4 +74,5 @@ body {
   font-size: $font-size-h4;
   font-style: normal;
   font-weight: bold;
+  color: $color-second;
 }

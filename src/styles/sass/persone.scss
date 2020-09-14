@@ -1,0 +1,17 @@
+.persone {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  &__name-and-incarico {
+    margin-left: 20px;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__incarico {
+    margin: 0;
+  }
+}
