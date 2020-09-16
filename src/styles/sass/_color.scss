@@ -1,5 +1,9 @@
 .color {
 
+  &_second {
+    color: $color-second;
+  }
+
   &_fifth {
     color: $color-fifth;
   }

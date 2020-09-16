@@ -1,21 +1,33 @@
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  margin-top: 60px;
-  background-color: transparent;
-  z-index: 10;
-  &__container {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
+  padding: {
+    top: 35px;
+    bottom: 15px;
   }
-  &__menu-block {
-    display: flex;
-    align-items: center;
+  background-color: #fdfdfe;
+  z-index: 10000;
+
+  @include media-breakpoint-up(765px) {
+    position: absolute;
+  }
+
+  &__container {
+    padding: {
+      right: 10px;
+      left: 10px;
+    }
+    height: 100%;
+
+    @include media-breakpoint-up(765px) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include media-breakpoint-up(1170px) {
+      max-width: 1170px;
+      margin: 0 auto;
+    }
   }
 }

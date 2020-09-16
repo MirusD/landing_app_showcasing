@@ -1,5 +1,5 @@
 .offer {
-  margin-top: 160px;
+  margin-top: 50px;
 
   &__container {
     text-align: center;
@@ -8,5 +8,9 @@
   &__title, &__text {
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  &__text {
+    margin-top: 20px;
   }
 }

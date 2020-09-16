@@ -1,5 +1,9 @@
 .choose-our-app {
-  margin-top: 170px;
+  margin-top: 50px;
+
+  @include media-breakpoint-up(750px) {
+    margin-top: 170px;
+  }
 
   &__container {
     text-align: center;

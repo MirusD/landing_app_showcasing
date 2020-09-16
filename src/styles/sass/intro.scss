@@ -1,41 +1,60 @@
 .intro {
   position: relative;
-  padding: {
-    top: 150px;
-    bottom: 10px;
-  };
+  display: flex;
+  align-items: center;
   background-color: #fdfdfe;
   background-image: url("~@/img/fone-city.png");
   background-repeat: repeat-x;
   background-position: bottom;
+  box-sizing: border-box;
+  height: 100vh;
+
+  @include media-breakpoint-up(1000px) {
+    height: auto;
+    padding-top: 120px;
+  }
 
   &__container {
-    display: flex;
-    align-items: center;
+    @include media-breakpoint-up(1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: {
+        right: 20px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
   }
 
   &__suptitle {
     display: inline-block;
     position: relative;
-    line-height: 32px;
+    line-height: 2.3rem;
     border-radius: 20px;
     background-color: $color-tenth;
     padding: {
-      right: 40px;
-      left: 40px;
+      right: 3rem; //18/54px
+      left: 3rem;  //18/54px
     }
     &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 35px;
+      bottom: 0;
+      width: 2.3rem;
       height: 100%;
       border-radius: 100%;
       background-color: $color-ninth;
       background-image: url("~@/img/icons/tick.png");
       background-position: center center;
       background-repeat: no-repeat;
+      background-size: 50%;
     }
   }
 
@@ -44,8 +63,29 @@
   }
 
   &__text {
-    width: 500px;
-    line-height: 25px;
+    max-width: 500px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+  }
+
+  &__img-phone {
+    display: none;
+
+    @include media-breakpoint-up(1000px) {
+      flex: 0 1 40%;
+      display: block;
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-up(1400px) {
+      flex: 0 1 60%;
+    }
+  }
+
+  &__btn {
+    margin-right: -7px;
   }
 
   &__shape {

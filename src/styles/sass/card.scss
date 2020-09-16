@@ -1,26 +1,32 @@
 .card {
-  flex: 0 1 300px;
+  min-width: 300px;
   max-width: 300px;
+  margin-right: 15px;
+  margin-left: 15px;
+
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 1.6666666666666666666666666666667rem; //30/18
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
 
   &__type_benefit {
     border: 3px solid #ebebeb;
-    margin-left: 70px;
   }
 
   &__header {
     background-color: $color-eighth;
     background-clip: border-box;
-    padding: 10px;
+    padding: 0.55555555555555555555555555555556rem; //10/18
     padding: {
-      top: 30px;
-      bottom: 30px;
+      top: 1.6666666666666666666666666666667rem; //30/18
+      bottom: 1.6666666666666666666666666666667rem; //30/18
     }
-    margin-bottom: 35px;
+    margin-bottom: 1.9444444444444444444444444444444rem; //35/18
   }
 
   &__price {
@@ -44,7 +50,7 @@
   }
 
   &__btn {
-    margin-top: 20px;
+    margin-top: 1.1111111111111111111111111111111rem; //20/18
     padding: {
       left: 45px;
       right: 45px;

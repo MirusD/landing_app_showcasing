@@ -19,13 +19,18 @@
   }
 
   &__menu {
-    margin-top: 40px;
-    color: $color-eighth;
+    display: none;
 
-    & .menu__link {
-      border-bottom: 2px solid $color-second;
-      &:hover {
-        border-bottom: 2px solid $color-eighth;
+    @include media-breakpoint-up(760px) {
+      display: block;
+      margin-top: 40px;
+      color: $color-eighth;
+
+      & .menu__link {
+        border-bottom: 2px solid $color-second;
+        &:hover {
+          border-bottom: 2px solid $color-eighth;
+        }
       }
     }
   }
@@ -46,6 +51,7 @@
   }
 
   &__copyright {
+    text-align: center;
     margin-top: 80px;
   }
 }

@@ -15,13 +15,17 @@
                 <span class="logo__mark-first">App</span><span class="logo__mark-second">Lab</span>
             </a>
             <nav class="menu">
-                <a href="#link-home" class="menu__link">Home</a>
-                <a href="#link-key-feature" class="menu__link">Key Features</a>
-                <a href="#link-pricing" class="menu__link">Pricing</a>
-                <a href="#link-testiminial" class="menu__link">Testiminial</a>
-                <a href="#link-faq" class="menu__link">FAQ</a>
+                <input type="checkbox" id="checkbox" class="menu-mobile__checkbox">
+                <label for="checkbox" class="menu-mobile__btn"><span class="menu-mobile__icon"></span></label>
+                <div class="menu__container">
+                    <a href="#link-home" class="menu__link">Home</a>
+                    <a href="#link-key-feature" class="menu__link">Key Features</a>
+                    <a href="#link-pricing" class="menu__link">Pricing</a>
+                    <a href="#link-testiminial" class="menu__link">Testiminial</a>
+                    <a href="#link-faq" class="menu__link">FAQ</a>
+                    <a href="#link-for-try-for-free" class="btn btn__primary menu__link-btn">Try for free</a>
+                </div>
             </nav>
-            <a href="#link-for-try-for-free" class="btn btn__primary">Try for free</a>
         </div>
     </header>
     <section class="intro">
@@ -38,10 +42,12 @@
                     Increase productivity with a simple to-do app, app for
                     managing your personal budgets.
                 </p>
-                <a href="link-for-try-for-free" class="btn btn__primary">Try for free</a>
-                <a href="link-for-try-for-free" class="btn btn__light">Watch demo video</a>
+                <div class="intro__btn-block">
+                    <a href="link-for-try-for-free" class="btn btn__primary intro__btn">Try for free</a>
+                    <a href="link-for-try-for-free" class="btn btn__light">Watch demo video</a>
+                </div>
             </div>
-            <div class="intor__img-phone">
+            <div class="intro__img-phone">
                 <img src="./img/phone.png" alt="phone">
             </div>
         </div>
@@ -56,7 +62,7 @@
     </section>
     <section class="trusted">
         <div class="container trusted__container">
-            <p>Trusted by companies like</p>
+            <h2 class="font-main color_second">Trusted by companies like</h2>
             <div class="trusted__logos-company">
                 <img class="trusted__img" src="img/logos/logo_company_southwest.png" alt="logo company Southwest">
                 <img class="trusted__img" src="img/logos/logo_company_anubis.png" alt="logo company Anubis">
@@ -67,49 +73,53 @@
         </div>
     </section>
     <section class="features-app">
-        <div class="container features-app__container">
-            <div class="features-app__img">
-                <img src="img/phone2.png" alt="phone">
-            </div>
-            <div class="features-app__list">
-                <h2 class="font-h2 features-app__title">Awesome apps features</h2>
-                <p class="features-app__subtext">
-                    Increase productivity with a simple to-do app. app for
-                    managing your personal budgets.
-                </p>
-                <section class="features-app__item">
-                    <img class="features-app__icon" src="img/icons/speed.png" alt="icon speed">
-                    <div class="features-app__description">
-                        <h3 class="font-h4 features-app__description-title color_fourth">Fast Performance</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
+        <div class="wrapper">
+            <div class="container features-app__container">
+                <div class="features-app__img">
+                    <img src="img/phone2.png" alt="phone">
+                </div>
+                <div class="features-app__list">
+                    <h2 class="font-h2 features-app__title">Awesome apps features</h2>
+                    <p class="features-app__subtext">
+                        Increase productivity with a simple to-do app. app for
+                        managing your personal budgets.
+                    </p>
+                    <div class="features-app__items-wrapper">
+                        <section class="features-app__item">
+                            <img class="features-app__icon" src="img/icons/speed.png" alt="icon speed">
+                            <div class="features-app__description">
+                                <h3 class="font-h4 features-app__description-title color_fourth">Fast Performance</h3>
+                                <p>
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="features-app__item">
+                            <img class="features-app__icon" src="img/icons/prototyping.png" alt="icon prototyping">
+                            <div class="features-app__description">
+                                <h3 class="font-h4 features-app__description-title color_fifth">Prototyping</h3>
+                                <p>
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="features-app__item">
+                            <img class="features-app__icon" src="img/icons/vector.png" alt="icon vector">
+                            <div class="features-app__description">
+                                <h3 class="font-h4 features-app__description-title color_sixth ">Vector Editing</h3>
+                                <p>
+                                    Get your blood tests delivered at
+                                    home collect a sample from the
+                                    news your blood tests.
+                                </p>
+                            </div>
+                        </section>
                     </div>
-                </section>
-                <section class="features-app__item">
-                    <img class="features-app__icon" src="img/icons/prototyping.png" alt="icon prototyping">
-                    <div class="features-app__description">
-                        <h3 class="font-h4 features-app__description-title color_fifth">Prototyping</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
-                    </div>
-                </section>
-                <section class="features-app__item">
-                    <img class="features-app__icon" src="img/icons/vector.png" alt="icon vector">
-                    <div class="features-app__description">
-                        <h3 class="font-h4 features-app__description-title color_sixth ">Vector Editing</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
     </section>
@@ -161,20 +171,22 @@
         </div>
     </section>
     <section class="designed-and-build">
-        <div class="container designed-and-build__container">
-            <div class="designed-and-build__img">
-                <img src="img/designed.png" alt="people and designed">
-            </div>
-            <div class="designed-and-build__content">
-                <h2 class="font-h2 designed-and-build__title">
-                    Designed & built by the latest code integration
-                </h2>
-                <p>
-                    The rise of mobile devices transforms the way we
-                    consume information entirely and the world's most
-                    elevant channels such as Facebook.
-                </p>
-                <a href="link-for-try-for-free" class="btn btn__primary designed-and-build__btn">Learn more</a>
+        <div class="wrapper">
+            <div class="container designed-and-build__container">
+                <div class="designed-and-build__img">
+                    <img src="img/designed.png" alt="people and designed">
+                </div>
+                <div class="designed-and-build__content">
+                    <h2 class="font-h2 designed-and-build__title">
+                        Designed & built by the latest code integration
+                    </h2>
+                    <p>
+                        The rise of mobile devices transforms the way we
+                        consume information entirely and the world's most
+                        elevant channels such as Facebook.
+                    </p>
+                    <a href="link-for-try-for-free" class="btn btn__primary designed-and-build__btn">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
@@ -247,55 +259,57 @@
         </div>
     </section>
     <section class="ultimate-features">
-        <div class="container ultimate-features__container">
-            <div class="ultimate-features__content">
-                <h2 class="font-h2 ultimate-features__title">Ultimate features that we built</h2>
-                <p class="ultimate-features__subtext">
-                    The rise of mobile devices transforms the way we
-                    consume information entirely.
-                </p>
-                <div class="ultimate-features__list">
-                    <div class="ultimate-features__item">
-                        <img src="img/icons/app-development.png" alt="icon development">
-                        <h3 class="font-h4">App development</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
+        <div class="wrapper">
+            <div class="container ultimate-features__container">
+                <div class="ultimate-features__content">
+                    <h2 class="font-h2 ultimate-features__title">Ultimate features that we built</h2>
+                    <p class="ultimate-features__subtext">
+                        The rise of mobile devices transforms the way we
+                        consume information entirely.
+                    </p>
+                    <div class="ultimate-features__list">
+                        <div class="ultimate-features__item">
+                            <img src="img/icons/app-development.png" alt="icon development">
+                            <h3 class="font-h4">App development</h3>
+                            <p>
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </p>
+                        </div>
+                        <div class="ultimate-features__item">
+                            <img src="img/icons/ux-planing.png" alt="icon ux planing">
+                            <h3 class="font-h4">UX planing</h3>
+                            <p>
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </p>
+                        </div>
+                        <div class="ultimate-features__item">
+                            <img src="img/icons/cloud-storage.png" alt="icon store">
+                            <h3 class="font-h4">Cloud Storage</h3>
+                            <p>
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </p>
+                        </div>
+                        <div class="ultimate-features__item">
+                            <img src="img/icons/support.png" alt="icon support">
+                            <h3 class="font-h4">Customer support</h3>
+                            <p>
+                                Get your blood tests delivered at
+                                home collect a sample from the
+                                news your blood tests.
+                            </p>
+                        </div>
                     </div>
-                    <div class="ultimate-features__item">
-                        <img src="img/icons/ux-planing.png" alt="icon ux planing">
-                        <h3 class="font-h4">UX planing</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
-                    </div>
-                    <div class="ultimate-features__item">
-                        <img src="img/icons/cloud-storage.png" alt="icon store">
-                        <h3 class="font-h4">Cloud Storage</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
-                    </div>
-                    <div class="ultimate-features__item">
-                        <img src="img/icons/support.png" alt="icon support">
-                        <h3 class="font-h4">Customer support</h3>
-                        <p>
-                            Get your blood tests delivered at
-                            home collect a sample from the
-                            news your blood tests.
-                        </p>
-                    </div>
+                    <a href="#link-for-see-all" class="btn btn__primary ultimate-features__btn">See all</a>
                 </div>
-                <a href="#link-for-see-all" class="btn btn__primary ultimate-features__btn">See all</a>
-            </div>
-            <div class="ultimate-features__img">
-                <img src="img/phone3.png" alt="phones">
+                <div class="ultimate-features__img">
+                    <img src="img/phone3.png" alt="phones">
+                </div>
             </div>
         </div>
     </section>
@@ -310,9 +324,9 @@
                 elevant channels such as Facebook.
             </p>
             <div class="price-holder">
-                <div class="price-holder__toggle">
-                    <span class="color_eighth ">Monthly</span>
-                    <span>Annually</span>
+                <div class="toggle">
+                    <span class="toggle__text color_eighth">Monthly</span>
+                    <span class="toggle__text">Annually</span>
                 </div>
                 <div class="price-holder__container">
                     <div class="card">
@@ -335,12 +349,12 @@
                             <h3 class="font-h4 card__category">Pro Master</h3>
                             <p class="card__subtext">For Best appartunities</p>
                         </header>
-                        <section>
+                        <div class="card__body">
                             <p>Drag & Drop Builder</p>
                             <p>1000's of Templates</p>
                             <p>Blog Support Tools</p>
                             <p>eCommerce Store</p>
-                        </section>
+                        </div>
                         <a href="#link-for-start-free-trail" class="btn btn__primary card__btn">Subscribe now</a>
                         <a href="#link-for-or-start-14-day-trail" class="btn btn__light card__btn_type_light">Or start 14 day trail</a>
                     </div>
@@ -349,35 +363,36 @@
         </div>
     </section>
     <section class="testimonial">
-        <div class="container testimonial__container">
-            <div class="testimonial__img">
-                <img src="img/People%20images.png" alt="people images">
-            </div>
-            <div class="testimonial__content">
-                <h2 class="font-h2">
-                    Meet Client Satisfaction by using product
-                </h2>
-                <p>
-                    The rise of mobile devices transforms the way we
-                    consume information entirely and the world's most
-                    elevant channels such as Facebook.
-                </p>
-                <div class="feedback">
-                    <div class="feedback__stars">
-                        <img src="img/stars.png" alt="stars">
-                    </div>
-                    <h4 class="feedback__title font-h4">User friendly & Customizable</h4>
-                    <p class="feedback__text">
-                        Bring to the table win-win survival strategies to ensure proactive domination.
-                        At the end of the day, going forward, a new normal that has evolved from generation
-                        X is on the runway heading towards a streamlined cloud solution. User generated
-                        content in real-time will have multiple touchpoints for offshoring.
+        <div class="wrapper">
+            <div class="container testimonial__container">
+                <div class="testimonial__img">
+                    <img src="img/People-images.png" alt="people images">
+                </div>
+                <div class="testimonial__content">
+                    <h2 class="font-h2">
+                        Meet Client Satisfaction by using product
+                    </h2>
+                    <p>
+                        The rise of mobile devices transforms the way we
+                        consume elevant channels such as Facebook.
                     </p>
-                    <div class="persone">
-                        <img class="persone__avatar" src="img/avatar.png" alt="avatar">
-                        <div class="persone__name-and-incarico">
-                            <h4 class="persone__name font-h4">Zoltan Nemeth</h4>
-                            <p class="persone__incarico">CEO of Pixel Lab</p>
+                    <div class="feedback">
+                        <div class="feedback__stars">
+                            <img src="img/stars.png" alt="stars">
+                        </div>
+                        <h4 class="feedback__title font-h4">User friendly & Customizable</h4>
+                        <p class="feedback__text">
+                            Bring to the table win-win survival strategies to ensure proactive domination.
+                            At the end of the day, going forward, a new normal that has evolved from generation
+                            X is on the runway heading towards a streamlined cloud solution. User generated
+                            content in real-time will have multiple touchpoints for offshoring.
+                        </p>
+                        <div class="persone">
+                            <img class="persone__avatar" src="img/avatar.png" alt="avatar">
+                            <div class="persone__name-and-incarico">
+                                <h4 class="persone__name font-h4">Zoltan Nemeth</h4>
+                                <p class="persone__incarico">CEO of Pixel Lab</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -397,27 +412,29 @@
         </div>
     </section>
     <section class="download-app">
-        <div class="container download-app__container">
-            <div class="download-app__content">
-                <h2 class="font-h2">
-                    Download our App now!
-                </h2>
-                <p>
-                    The rise of mobile devices transforms the way we
-                    consume information entirely and the world's most
-                    elevant channels such as Facebook.
-                </p>
-                <div class="download-app__buttons">
-                    <a href="#link-for-google-play">
-                        <img src="img/btn-google-play.png" alt="google play">
-                    </a>
-                    <a href="#link-for-apple-store">
-                        <img src="img/btn-app-store-apple.png" alt="app store apple">
-                    </a>
+        <div class="wrapper">
+            <div class="container download-app__container">
+                <div class="download-app__content">
+                    <h2 class="font-h2">
+                        Download our App now!
+                    </h2>
+                    <p class="download-app__text">
+                        The rise of mobile devices transforms the way we
+                        consume information entirely and the world's most
+                        elevant channels such as Facebook.
+                    </p>
+                    <div class="download-app__buttons">
+                        <a href="#link-for-google-play">
+                            <img src="img/btn-google-play.png" alt="google play">
+                        </a>
+                        <a href="#link-for-apple-store">
+                            <img src="img/btn-app-store-apple.png" alt="app store apple">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="download-app__img">
-                <img src="img/app.png" alt="app picture">
+                <div class="download-app__img">
+                    <img src="img/app.png" alt="app picture">
+                </div>
             </div>
         </div>
     </section>

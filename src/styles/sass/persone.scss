@@ -1,7 +1,13 @@
 .persone {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
+
+  @include media-breakpoint-up(1000px) {
+    justify-content: flex-start;
+    max-width: 300px;
+  }
 
   &__name-and-incarico {
     margin-left: 20px;
