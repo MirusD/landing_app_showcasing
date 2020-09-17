@@ -8,6 +8,8 @@
 }
 
 .toggle {
+  user-select: none;
+  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,6 +25,7 @@
   }
   position: relative;
   &:before {
+    transition: all 0.5s ease;
     content: "";
     position: absolute;
     left: 2px;
@@ -34,8 +37,14 @@
     z-index: -1;
   }
 
+  &.on:before {
+    left: 50%;
+  }
+
   &__text {
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 11px;
+    transition: all 0.5s ease;
   }
 }
