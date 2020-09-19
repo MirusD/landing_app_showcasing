@@ -1,0 +1,147 @@
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfe;
+  background-image: url("~@/img/fone-city.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  box-sizing: border-box;
+  height: 100vh;
+
+  @include media-breakpoint-up(1000px) {
+    height: auto;
+    padding-top: 120px;
+  }
+
+  &__container {
+    @include media-breakpoint-up(1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: {
+        right: 20px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__suptitle {
+    display: inline-block;
+    position: relative;
+    line-height: 2.3rem;
+    border-radius: 20px;
+    background-color: $color-tenth;
+    padding: {
+      right: 3rem; //18/54px
+      left: 3rem;  //18/54px
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 2.3rem;
+      height: 100%;
+      border-radius: 100%;
+      background-color: $color-ninth;
+      background-image: url("~@/img/icons/tick.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    max-width: 500px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+  }
+
+  &__img-phone {
+    display: none;
+
+    @include media-breakpoint-up(1000px) {
+      flex: 0 1 40%;
+      display: block;
+      & img {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-up(1400px) {
+      flex: 0 1 60%;
+    }
+  }
+
+  &__btn {
+    margin-right: -7px;
+  }
+
+  &__shape {
+
+    &-circle_position {
+
+      &_first {
+        right: 32%;
+        top: 14%;
+      }
+
+      &_second {
+        left: 21%;
+        bottom: 10%;
+      }
+
+      &_third {
+        right: 4%;
+        bottom: 6%;
+      }
+
+      &_fourth {
+        top: 19%;
+        left: 6%;
+      }
+    }
+
+    &-rectangle_position {
+
+      &_first {
+        top: 31%;
+        left: 28%;
+      }
+
+    }
+
+    &-plus_position {
+
+      &_first {
+        bottom: 5%;
+        left: 40%;
+      }
+
+    }
+
+    &-cross_position {
+
+      &_first {
+        bottom: 22%;
+        left: 50%;
+      }
+
+      &_second {
+        bottom: 15%;
+        left: 3%;
+      }
+    }
+  }
+}

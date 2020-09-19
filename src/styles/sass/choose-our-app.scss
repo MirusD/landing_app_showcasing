@@ -1,0 +1,35 @@
+.choose-our-app {
+  margin-top: 50px;
+
+  @include media-breakpoint-up(750px) {
+    margin-top: 170px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 500px;
+    margin: 0 auto;
+
+  }
+
+  &__subtext {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+  }
+
+  &__why-item {
+    flex: 0 1 300px;
+    margin-bottom: 40px;
+  }
+}

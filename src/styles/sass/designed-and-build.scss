@@ -1,0 +1,53 @@
+.designed-and-build {
+  margin-top: 0;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 50px;
+
+  @include media-breakpoint-up(1000px) {
+    margin-top: 100px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(1000px) {
+      justify-content: space-between;
+      max-width: 1200px;
+      margin-left: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+
+    & img {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(1000px) {
+      position: static;
+      display: block;
+      flex: 0 1 50%;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 570px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(1000px) {
+      text-align: left;
+      flex: 0 1 460px;
+      margin: 0;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+}

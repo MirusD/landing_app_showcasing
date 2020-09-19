@@ -1,0 +1,55 @@
+.download-app {
+  border-top: 2px solid #f4f4f4;
+  margin-top: 80px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1350px;
+    margin-right: 0;
+
+    @include media-breakpoint-up(1000px) {
+      text-align: left;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__text {
+    display: none;
+
+    @include media-breakpoint-up(1000px) {
+      display: block;
+    }
+  }
+
+  &__buttons {
+    margin-top: 35px;
+
+    @include media-breakpoint-up(1000px) {
+      & a:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+    & > img {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(1000px) {
+      position: static;
+      flex: 1 0 50%;
+      margin-bottom: -58px;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.logo {
+  position: relative;
+  font-size: $font-size-logo;
+  font-weight: bold;
+  margin-right: auto;
+  text-decoration: none;
+  z-index: 1100;
+
+  @include media-breakpoint-up(765px) {
+    margin-bottom: 0;
+  }
+  &__mark-first {
+    color: $color-ninth;
+  }
+  &__mark-second {
+    color: $color-second;
+  }
+}

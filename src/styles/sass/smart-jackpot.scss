@@ -1,0 +1,50 @@
+.smart-jackpot {
+  margin-top: 50px;
+  padding-bottom: 80px;
+
+  &__first-block {
+
+    @include media-breakpoint-up(760px) {
+      display: flex;
+    }
+  }
+
+  &__second-block {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(1000px) {
+      text-align: left;
+      margin-top: 80px;
+      justify-content: space-around;
+    }
+
+    @include media-breakpoint-up(1400px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    max-width: 250px;
+
+    @include media-breakpoint-up(1000px) {
+      max-width: 300px;
+    }
+  }
+
+  &__text {
+    padding: 25px 25px;
+    border-left: 2px solid #b9b9b8;
+
+    @include media-breakpoint-up(760px) {
+      margin-left: 20px;
+    }
+
+    @include media-breakpoint-up(1000px) {
+      padding: 50px 50px;
+      margin-left: 90px;
+    }
+  }
+}
