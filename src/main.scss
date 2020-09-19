@@ -1,6 +1,6 @@
 @import "~normalize.css";
 @import "node_modules/slick-carousel/slick/slick";
-
+@import "node_modules/magnific-popup/src/css/main";
 @import "styles/sass/fonts";
 @import "styles/sass/variables";
 @import "styles/sass/color";
@@ -24,3 +24,4 @@
 @import "styles/sass/faq";
 @import "styles/sass/download-app";
 @import "styles/sass/footer";
+@import "~@/components/popup/popup.scss";

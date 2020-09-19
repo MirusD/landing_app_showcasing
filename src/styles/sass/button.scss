@@ -1,4 +1,5 @@
 .btn {
+  cursor: pointer;
   display: inline-block;
   line-height: 50px;
   border-radius: 25px;
@@ -8,6 +9,8 @@
   }
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
+  outline: none !important;
+  border: none;
   &__primary {
     color: white;
     background-color: $color-fifth;

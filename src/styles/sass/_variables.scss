@@ -103,10 +103,6 @@ body {
   font-weight: bold;
   color: $color-second;
   line-height: 1.3em;
-
-  @include media-breakpoint-up(500px) {
-
-  }
 }
 
 .font-h2 {
@@ -131,4 +127,10 @@ body {
   font-style: normal;
   font-weight: bold;
   color: $color-second;
+}
+
+.text-align {
+  &_center {
+    text-align: center;
+  }
 }

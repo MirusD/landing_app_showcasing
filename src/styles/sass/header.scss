@@ -7,7 +7,7 @@
     bottom: 15px;
   }
   background-color: #fdfdfe;
-  z-index: 10000;
+  z-index: 100;
 
   @include media-breakpoint-up(765px) {
     position: absolute;

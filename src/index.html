@@ -19,11 +19,11 @@
                 <label for="checkbox" class="menu-mobile__btn"><span class="menu-mobile__icon"></span></label>
                 <div class="menu__container">
                     <a href="#home" class="menu__link">Home</a>
-                    <a href="#feature" class="menu__link">Key Features</a>
+                    <a href="#features" class="menu__link">Key Features</a>
                     <a href="#offer" class="menu__link">Pricing</a>
                     <a href="#testimonial" class="menu__link">Testimonial</a>
                     <a href="#faq" class="menu__link">FAQ</a>
-                    <a href="#link-for-try-for-free" class="btn btn__primary menu__link-btn">Try for free</a>
+                    <a href="#subscribe" class="btn btn__primary menu__link-btn js-open-popup-subscribe">Try for free</a>
                 </div>
             </nav>
         </div>
@@ -43,8 +43,8 @@
                     managing your personal budgets.
                 </p>
                 <div class="intro__btn-block">
-                    <a href="link-for-try-for-free" class="btn btn__primary intro__btn">Try for free</a>
-                    <a href="link-for-try-for-free" class="btn btn__light">Watch demo video</a>
+                    <a href="#subscribe" class="btn btn__primary intro__btn js-open-popup-subscribe">Try for free</a>
+                    <a href="https://www.youtube.com/watch?v=2jTs9gdKVaM" class="btn btn__light js-open-popup-video">Watch demo video</a>
                 </div>
             </div>
             <div class="intro__img-phone">
@@ -185,7 +185,7 @@
                         consume information entirely and the world's most
                         elevant channels such as Facebook.
                     </p>
-                    <a href="link-for-try-for-free" class="btn btn__primary designed-and-build__btn">Learn more</a>
+                    <a href="#subscribe" class="btn btn__primary designed-and-build__btn js-open-popup-subscribe">Learn more</a>
                 </div>
             </div>
         </div>
@@ -305,7 +305,7 @@
                             </p>
                         </div>
                     </div>
-                    <a href="#link-for-see-all" class="btn btn__primary ultimate-features__btn">See all</a>
+                    <a href="#subscribe" class="btn btn__primary ultimate-features__btn js-open-popup-subscribe">See all</a>
                 </div>
                 <div class="ultimate-features__img">
                     <img src="img/phone3.png" alt="phones">
@@ -341,7 +341,7 @@
                             <p>Blog Support Tools</p>
                             <p>eCommerce Store</p>
                         </div>
-                        <a href="#link-for-start-free-trail" class="btn btn__primary card__btn">Start free trail</a>
+                        <a href="#subscribe" class="btn btn__primary card__btn js-open-popup-subscribe">Start free trail</a>
                     </div>
                     <div class="card card__type_benefit js-card" data-card-type="pro master">
                         <header class="card__header">
@@ -355,8 +355,8 @@
                             <p>Blog Support Tools</p>
                             <p>eCommerce Store</p>
                         </div>
-                        <a href="#link-for-start-free-trail" class="btn btn__primary card__btn">Subscribe now</a>
-                        <a href="#link-for-or-start-14-day-trail" class="btn btn__light card__btn_type_light">Or start 14 day trail</a>
+                        <a href="#subscribe" class="btn btn__primary card__btn js-open-popup-subscribe">Subscribe now</a>
+                        <a href="#subscribe" class="btn btn__light card__btn_type_light js-open-popup-subscribe">Or start 14 day trail</a>
                     </div>
                 </div>
             </div>
@@ -565,6 +565,26 @@
             <p class="footer__copyright">Copyright Arifur Rahman Tushar 2019. All rights reserved</p>
         </div>
     </footer>
-    <div class="test"></div>
+    <div id="subscribe" class="popup popup-subscribe mfp-hide">
+        <div class="popup__container">
+            <form action="#">
+                <h2 class="font-h2">Leave a request</h2>
+                <div class="popup-subscribe__item">
+                    <label class="popup-subscribe__label">Name</label>
+                    <input class="popup-subscribe__input"type="email">
+                </div>
+                <div class="popup-subscribe__item">
+                    <label class="popup-subscribe__label">Email</label>
+                    <input class="popup-subscribe__input"type="text">
+                </div>
+                <div class="popup-subscribe__control">
+                    <input class="btn btn__primary popup-subscribe__btn js-popup-subscribe__submit" type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="gratitude" class="popup popup-gratitude mfp-hide">
+        <h2 class="font-h2 text-align_center">Thank you for your interest</h2>
+    </div>
 </body>
 </html>
